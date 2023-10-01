@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 38%;
+  background-color: aliceblue;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.content {
+  width: 50%;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: white;
+}
+.content .yourResult {
+  margin: 1rem auto 3rem;
+  opacity: 60%;
+}
+.content .circle {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  height: 11rem;
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+}
+.content .circle .number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+.content .circle .ofCent {
+  opacity: 60%;
+  font-size: 1rem;
+}
+.content h1 {
+  margin: 3rem 0 0;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.content .pResult {
+  padding: 1rem 2rem;
+  opacity: 60%;
+  font-size: 1.1rem;
+}
+
+.summary {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.summary h2 {
+  text-align: start;
+  margin: 2rem 0 1.5rem 3.5rem;
+}
+.summary button {
+  display: block;
+  padding: 1rem;
+  border-radius: 30px;
+  margin: 2.1rem;
+  border: 0;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.summary button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+.summaryScore {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+}
+.summaryScore .score {
+  display: flex;
+}
+.summaryScore .score p {
+  color: black;
+  font-weight: 700;
+}
+.summaryScore .score .scoreOfCent {
+  margin-left: 0.4rem;
+  opacity: 60%;
+}
+
+.Reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+}
+.Reaction p {
+  color: hsl(0, 100%, 67%);
+}
+
+.Memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+}
+.Memory p {
+  color: hsl(39, 100%, 56%);
+}
+
+.Verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+}
+.Verbal p {
+  color: hsl(166, 100%, 37%);
+}
+
+.Visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+}
+.Visual p {
+  color: hsl(234, 85%, 45%);
+}
+
+.icons {
+  margin: 0 0.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  .container html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 70%;
+  }
+  body {
+    height: auto;
+  }
+  .content {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 42vh;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .summary {
+    width: 100%;
+    height: 54vh;
+  }
+}
+@media screen and (max-height: 750px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-height: 625px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */
